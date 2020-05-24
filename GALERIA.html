@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+   <-- CODIGO DE APOYO BAJADO DE INTERNET -->
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background:#333;
+    color:#eee;
+    width:100%;
+}
+
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 1rem;
+    background-color:#333;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+input#abrir-cerrar:checked ~ #sidebar {
+    width:300px;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
+}
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+
+
+</style>
+
+
+</head>
+
+<!–– ------------------------------- CODIGO CREADO POR MI PERSONA, DIEGO FAJARDO 5TO BACO JM -------------------------------------- ––>
+
+<body  background="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\fondogaleria1.jpg"><!––IMAGEN DE FONDO––>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">                                          <!––BOTON ABRIR MENU–>
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>    <!––BOTON ABRIR MENU–>
+    <div id="sidebar" class="sidebar">                                                                              <!––BOTON ABRIR MENU–>
+        <ul class="menu">                                                                     <!––DENTRO DEL MENU–>
+            <li><CENTER><a href="#">MENU PRINCIPAL</a></ceNTER></li>                         <!––OPCION QUIENES SOMOS?–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/index.htm"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\home.png" width="150" height="150"></a>
+
+            <li><CENTER><a href="#">¿QUIENES SOMOS?</a></ceNTER></li>  <!––OPCION GALERIA–>    
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/QUIENESSOMOS.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\iconsomos.png" width="150" height="150"></a>  
+                                            
+            <li><CENTER><a href="#">PLATILLOS</a></ceNTER></li>                                                 <!––OPCION PLATILLOS–>
+             <br>    
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/platillos.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\menu1.png" width="150" height="150"></a>                                           
+            <br> 
+            <li><CENTER><a href="#">PROMOCIONES</a></ceNTER></li>                                                 <!––OPCION PROMOCIONES–>
+            <br>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/promociones.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\promo.png" width="150" height="150"></a>  
+        </ul>
+    </div>
+    <p> <img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\logorestaurante1.png" align="left">
+    <title>Galeria</title>
+    <br>
+    <CENTER> <FONT FACE="Optima"SIZE="9" COLOR="white">BIENVENIDOS A NUESTRA GALERIA</FONT></CENTER><!––TITULO PRINCIPAL–>
+    <hr COLOR="#FF7070" width=1000>
+    <CENTER> <FONT FACE="Brush Script MT"SIZE="6" COLOR="white">ANTOJITOS CHAPIN</FONT></CENTER>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p><CENTER><FONT BGCOLOR="#FF7070" FACE="Times New Roman"SIZE="5" COLOR="#FFB3A3" > <em>GRACIAS POR VISITAR NUESTRA GALERIA, EN ESTA PAGINA ENCONTRARAS IMAGENES EXCLUSIVAS DE NUESTRO RESTAURANTE, IMAGENES DE NUESTRO PRIMER RESTAURANTE HASTA COMO SE ENCUENTRA EN LA ACTUALIDAD, TAMBIEN PODRAS VER IMAGENES SOBRE LAS DISTINTAS AREAS DE NUESTRO RESTAURANTE Y DEL AMBIENTE QUE SE VIVE...<strong>ANTOJITOS CHAPIN</strong></em></FONT></CENTER></p>
+
+    <!––---------------------------------IMAGENES UTILICIDAS------------------------------------------------------–
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, maximun-scale=1,miniun-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="slider">
+        <ul>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante1.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante2.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante3.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante4.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante5.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante6.png"></li>
+
+        </ul>
+     </div>
+     <hr COLOR="#FF7070" width=1500>
+
+      <div class="slider">
+        <ul>            
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante7.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante8.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante9.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante10.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante11.png"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\restaurante12.png"></li>
+        </ul>
+     </div> 
+
+    <br>
+    <br>
+    <br>
+    <br>    
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   <----------------------- IMPORTANTE!!! --------------------->
+    <-- AQUI SOLO SE PROGRAMA EL BOTON QUE DESPLIEGA EL MENU!!!  -->
+   <-- CODIGO DE APOYO BAJADO DE INTERNET  -->
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background:#333;
+    color:#eee;
+    width:100%;
+}
+
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 1rem;
+    background-color:#333;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+input#abrir-cerrar:checked ~ #sidebar {
+    width:300px;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
+}
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+
+
+</style>
+
+
+</head>
+
+<!–– ------------------------------- CODIGO CREADO POR MI PERSONA, DIEGO FAJARDO 5TO BACO JM -------------------------------------- ––>
+
+<body  background="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\fondomenu.jpg"><!––IMAGEN DE FONDO––>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">                                          <!––BOTON ABRIR MENU–>
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>    <!––BOTON ABRIR MENU–>
+    <div id="sidebar" class="sidebar">                                                                              <!––BOTON ABRIR MENU–>
+        <ul class="menu">                                                                     <!––DENTRO DEL MENU–>
+            <li><CENTER><a href="#">¿QUIENES SOMOS?</a></ceNTER></li>                         <!––OPCION QUIENES SOMOS?–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/QUIENESSOMOS.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\iconsomos.png" width="150" height="150"></a>
+
+            <li><CENTER><a href="#">GALERIA</a></ceNTER></li>  <!––OPCION GALERIA–>    
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/GALERIA.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\galeria1.png" width="150" height="150"></a>                                           
+
+
+            <li><CENTER><a href="#">PLATILLOS</a></ceNTER></li>                                                 <!––OPCION PLATILLOS–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/platillos.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\menu1.png" width="150" height="150"></a>                                           
+    
+            <li><CENTER><a href="#">PROMOCIONES</a></ceNTER></li>                                                 <!––OPCION PROMOCIONES–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/promociones.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\promo.png" width="150" height="150"></a>  
+        </ul>
+    </div>
+    <center> <H1>ANTOJITOS CHAPIN</H1></ceNTER>
+</body>
+</html> 

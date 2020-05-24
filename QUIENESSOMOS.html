@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   <-- CODIGO DE APOYO BAJADO DE INTERNET -->
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background:#333;
+    color:#eee;
+    width:100%;
+}
+
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 1rem;
+    background-color:#333;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+input#abrir-cerrar:checked ~ #sidebar {
+    width:300px;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
+}
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+
+
+</style>
+
+
+</head>
+
+<!–– ------------------------------- CODIGO CREADO POR MI PERSONA, DIEGO FAJARDO 5TO BACO JM -------------------------------------- ––>
+
+<body  background="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\fondoquienessomos1.jpg" ><!––IMAGEN DE FONDO––>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">                                          <!––BOTON ABRIR MENU–>
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>    <!––BOTON ABRIR MENU–>
+    <div id="sidebar" class="sidebar">                                                                              <!––BOTON ABRIR MENU–>
+        <ul class="menu">                                                                     <!––DENTRO DEL MENU–>
+            <li><CENTER><a href="#">MENU PRINCIPAL</a></ceNTER></li>                         <!––OPCION QUIENES SOMOS?–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/index.htm"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\home.png" width="150" height="150"></a>
+
+            <li><CENTER><a href="#">GALERIA</a></ceNTER></li>  <!––OPCION GALERIA–>    
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/GALERIA.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\galeria1.png" width="150" height="150"></a>                                           
+
+
+            <li><CENTER><a href="#">PLATILLOS</a></ceNTER></li>                                                 <!––OPCION PLATILLOS–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/platillos.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\menu1.png" width="150" height="150"></a>                                           
+    
+            <li><CENTER><a href="#">PROMOCIONES</a></ceNTER></li>                                                 <!––OPCION PROMOCIONES–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/promociones.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\promo.png" width="150" height="150"></a>  
+        </ul>
+    </div>
+     <br>
+     <CENTER> <FONT FACE="Optima"SIZE="9" COLOR="white">¿QUIENES SOMOS?</FONT>
+        <hr COLOR="#FF7070" width=500>
+        <br>
+        <p> 
+<img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\logorestaurante1.png" align="left"> <FONT FACE="Optima"SIZE="6" COLOR="white"> 
+<em>Somos un restaurante artesanal dedicado a la cultura guatemalteca, somos artesanales porque hacemos todo desde el principio y de una forma muy personal, con dedicación y trabajo diario. Para que cada uno de nuestros clientes residentes de guatemala y extranjeros vivan y sientan el sabor unico y delicioso de la comida chapina.Somos el unico restaurante que ofrece las comidas mas tipicas de la mayoria de culturas guatemaltecas,contamos con todo lo que el cliente pide, y contamos con tres areas de comida distintas, la primera es el area de niños,esta equipada con mesas especiales para niños de 3 a 10 años,tambien incluye juegos tradicionales guatemaltecos todo fabricado de forma natural, como columpios hechos de llantas reclicladas, etc. El area de niños cuenta con todas las medidas de seguridad, para que los niños al estar solos no corran ningun peligro. La segunda area es para aquellas personas que quieren una merienda mas formal, contamos con grupos culturales invitados para que disfruten de una relajante musica mientras que almuerza o cena, esto los dias Lunes y Miercoles. La tercera area, se encuentra en el segundo nivel de nuetro restaurante, cuenta con una vista hermosa al volcan de pacaya. Nuestro restaurante se caracteriza por mezclarse con la naturalesa y darle un toque muy autoctono.</em></FONT> 
+</p>
+<CENTER><IMG SRC="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\foto1.jpg">
+    <CENTER><FONT FACE="Optima"SIZE="4" COLOR="FFAF79"> Cenas Musicales en Antojitos Chapin </CENTER>
+        <br>
+         <hr COLOR="#FF7070" width=1500>
+<p> 
+<img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\foto3.jpg" align="right"><MARQUEE WIDTH=27% HEIGHT=70> <FONT FACE="Optima"SIZE="9" COLOR="white"><em>NUESTRA HISTORIA</MARQUEE></FONT>
+<hr COLOR="#FFAF79 " width=300></FONT>
+<br>
+<FONT FACE="Optima"SIZE="5" COLOR="#C9F8FF"><em>Todo empezó con un sueño en el año 2001…
+<br>
+<br>
+<em>Un día Brayan Fajardo citó a su hermano menor Diego Fajardo para comentarle que quería abrir un restaurante, una de esas asignaturas pendientes. Para ello necesitaba un socio en el que confiase ciegamente y allí en un sofá de su casa, una taza de cafe en mano, se empezó a forjar la idea. No tardaron en empezar a hablar de una de sus pasiones, las comidas tipicas como el pepian e hicieron un recorrido por los mejores restaurantes de comidad tipica en la antigua guatemala, panajachel, peten, baja verapaz… y llegaron a una conclusión: no hay muchos restaurantes de comida chapina y en los pocos que hay no se le siente la escencia guatemalteca.
+<br>
+<br>
+ Diego no dudó en contactar con su buen amigo Jeremias Molina, Chef reconocido en toda guatemala, con cinco estrellas Michelin. Jeremias lo vio clarísimo desde el principio “Es una idea fantástica pero arriesgada, ¿encerio se arriesgaran?” Para hacer comidas tipicas de gautemla la cocina debe funcionar de una forma artesanal, con alimentos hechos a la lecha, con mucho personal de organizado pero lo mas importante, que sepa lo bueno de la comida nacional. El proceso empieza de cero cada mañana, picar las mas frescas verduras y carnes disponibles para elaborar cada platillo que lo requiera, en una picadora refrigerada a 0º C.
+ <br> 
+<br>
+ para mantener el producto con la calidad y sabor que la elaboración de nuestros productos requiere. Condimentar cada una de ellas con diferentes ingredientes para crear recetas únicas y equilibradas con producto local y ecológico siempre que sea posible para garantizar su frescura. Evitamos el uso de gas para no quitarle el toque a la comida, ya que eso nos caracterizara. No menos importante es disponer diariamente de un pan y tortilla artesanal sin aditivos, trabajo de largos meses de pruebas. Mientras buscaban la ubicación adecuada, un día Brayan Fajardo pasó por debajo del arco de la antigua guatemala, cuando vio que un restaurante que estaba ahi se estaba mudandoy el local quedaria disponible, no durmió hasta conseguir convencer a su socio que ese era el lugar adecuado, cosa que sólo veía él. Ya en marcha el proyecto y a dos semana de empezar, Diego Fajardo se despertó a medianoche con el ingrediente que hacía días buscaba, llamó a un viejo amigo, Alex Barrera, el mejor panadero de esa zona que conocìa y le propuso preparar el mejor pan para el restaurante.
+Alex respondió, “Es la tendencia que está empezando ahora mismo en pana y la Ciudad Capital”, no lo pensó ni un momento y a los dos días estaban reunidos los cuatro en la Antigua Guatemala.
+<br>
+<br>
+<strong> Y el sueño se convirtió en realidad, el resto es historia...</strong>
+<br>
+<br>
+<hr COLOR="#FF7070" width=1500>
+<br>
+<br>
+<img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\foto5.jpg" align="left"><FONT FACE="Optima"SIZE="7" COLOR="#FFEF7E ">
+<em>DATO IMPORTANTE</FONT>
+<hr COLOR="#FFAF79 " width=300></FONT>
+<br>
+<br>
+<FONT FACE="Optima"SIZE="6" COLOR="#C9F8FF"><em>Todo empezo con Brayan Fajardo sentado en un sofa y con una taza de cafe y una idea sin importancia el dia 23 de abril del año 2001 luego se asocio Diego Fajardo su hermano ...
+<br>
+<br>
+<br>
+<br><FONT FACE="Optima"SIZE="5" COLOR="#C9F8FF">Brayan Y Diego Fajardo (hermanos) En La inauguraciòn del primer Antojito Chapin 20-6-2001
+<br>
+<br>
+<br>
+<br>
+<hr COLOR="#FF7070" width=1500>
+<br>
+<br>
+<br>
+
+<img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\foto4.jpg" align="right"><FONT FACE="Optima"SIZE="7" COLOR="#FFEF7E ">
+<br>
+<br><em>DATO IMPORTANTE</FONT>
+<hr COLOR="#FFAF79 " width=300></FONT>
+<br>
+<br>
+<FONT FACE="Optima"SIZE="8" COLOR="#C9F8FF"><em>El Primer Restaurante de Antojitos Chapin se inauguro en la Antigua Guatemala el 20 de Junio Del año 2001...
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr COLOR="#FF7070" width=1500>
+<br>
+<MARQUEE  BEHAVIOR=ALTERNATE>COMENTANOS QUE TE PARECIERON NUESTROS INICIOS :) </MARQUEE>
+<br>
+<textarea name="texto" rows="6" cols="100" placeholder= "COMENTA AQUI :)"></textarea>
+<br>
+<input type="submit"> 
+<br>
+</FONT></em>
+<hr COLOR="#FF7070" width=1500>
+<br>
+<MARQUEE WIDTH=50% HEIGHT=60 BGCOLOR="#FF7070"> TAMBIEN PUEDES VISITAR NUESTRA GALERIA </MARQUEE>
+<br>
+ <li><CENTER><H5> <a href="#EBFB23">↓↓↓ CLICK A LA IMAGEN ↓↓↓</a></ceNTER></li>  <!––OPCION GALERIA–>    
+ <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/GALERIA.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\galeria1.png" width="150" height="150"></a> 
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html> 

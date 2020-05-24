@@ -1,0 +1,273 @@
+
+<html lang="es">
+<head>
+    <style>
+   <-- CODIGO DE APOYO BAJADO DE INTERNET -->
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background:#333;
+    color:#eee;
+    width:100%;
+}
+
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 1rem;
+    background-color:#333;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+input#abrir-cerrar:checked ~ #sidebar {
+    width:300px;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
+}
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+
+
+</style>
+
+
+</head>
+
+<!–– ------------------------------- CODIGO CREADO POR MI PERSONA, DIEGO FAJARDO 5TO BACO JM -------------------------------------- ––>
+
+<body  background="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\fondoplatillos1.png"><!––IMAGEN DE FONDO––>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">                                          <!––BOTON ABRIR MENU–>
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>    <!––BOTON ABRIR MENU–>
+    <div id="sidebar" class="sidebar">                                                                              <!––BOTON ABRIR MENU–>
+        <ul class="menu">                                                                     <!––DENTRO DEL MENU–>
+            <li><CENTER><a href="#">MENU PRINCIPAL</a></ceNTER></li>                         <!––OPCION QUIENES SOMOS?–>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/index.htm"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\home.png" width="150" height="150"></a>
+
+            <li><CENTER><a href="#">¿QUIENES SOMOS?</a></ceNTER></li>  <!––OPCION GALERIA–>    
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/QUIENESSOMOS.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\iconsomos.png" width="150" height="150"></a>  
+                                            
+            <li><CENTER><a href="#">GALERIA</a></ceNTER></li>                                                 <!––OPCION PLATILLOS–>
+             <br>    
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/GALERIA.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\galeria1.png" width="150" height="150"></a>                                           
+            <br> 
+            <li><CENTER><a href="#">PROMOCIONES</a></ceNTER></li>                                                 <!––OPCION PROMOCIONES–>
+            <br>
+            <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/promociones.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\promo.png" width="150" height="150"></a>  
+        </ul>
+    </div>
+    <p> <img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\logorestaurante1.png" align="left">
+    <title>Galeria</title>
+    <br>
+    <CENTER> <FONT FACE="Optima"SIZE="9" COLOR="white">NUESTRO MENU</FONT></CENTER><!––TITULO PRINCIPAL–>
+    <hr COLOR="#FF7070" width=1000>
+    <CENTER> <FONT FACE="Brush Script MT"SIZE="6" COLOR="white">ANTOJITOS CHAPIN</FONT></CENTER>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!––---------------------------------IMAGENES UTILICIDAS------------------------------------------------------–
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, maximun-scale=1,miniun-scale=1">
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div class="slider">
+        <ul>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\platillo1.jpg"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\platillo2.jpg"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\platillo3.jpg"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\platillo4.jpg"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\platillo5.jpg"></li>
+            <li><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\platillo6.jpg"></li>
+
+        </ul>
+     </div>
+     <hr COLOR="#FF7070" width=1500>
+     <br>
+ 
+    <CENTER><MARQUEE WIDTH=23% HEIGHT=60> <FONT FACE="New Times Roman"SIZE="5" COLOR="white">►►↓↓ Visualizar/Descargar Menu ↓↓◄◄</MARQUEE></FONT> </div>
+      <center> <a href="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\pdf\MENUDIEGOFA.pdf"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\platillo1.jpg" width="150" height="150"></a> 
+
+    <br>
+    <br>
+    <hr COLOR="#FF7070" width=1500>
+    <br>
+     <CENTER><MARQUEE WIDTH=23% HEIGHT=60> <FONT FACE="New Times Roman"SIZE="5" COLOR="white">►►↓↓ IR A NUESTRAS PROMOCIONES ↓↓◄◄</MARQUEE></FONT> </div>
+    <br>
+          <center> <a href="file:///C:/Users/Windows%2010/Documents/MATERIAS/PROGRACOMERECIAL/proyecto%202do%20bimestre/promociones.html"></button><img src="C:\Users\Windows 10\Documents\MATERIAS\PROGRACOMERECIAL\proyecto 2do bimestre\img\promociones.png" width="200" height="150"></a> 
+     <br> 
+     <br>
+         <hr COLOR="#FF7070" width=1500>  
+     <br>
+     <br>  
+    <FONT FACE="New Time Roman">
+    <MARQUEE SCROLLDELAY =50  BGCOLOR="#FF7070"> <h2><strong>A CONSECUENCIA DE LA SISTUACIÒN QUE VIVE EL PAÌS ACTUALMENTE POR EL COVID-19 Y POR SU SEGURIDAD, SOLO ESTAREMOS REALIZANDO PEDIDOS A DOMICILIO. GRACIAS POR SU COMPRENCIÒN :) #JuntosSaldremosAdelante </strong></h2></MARQUEE>
+    <br>
+    </FONT>
+    <form action="../../form-result.php" target="_blank">
+
+  <fieldset>
+
+    <legend><H1 style="color:#41F6FF";>REALIZA TU PEDIDO</legend></H1>
+
+    <p><label style="color:#FFDFB6";>NOMBRE COMPLETO:                 <input type="text" name="nombre"></label></p>
+
+    <p><label style="color:#FFDFB6";>DIRECCION DE CORREO ELECTRONICO: <input type="text" name="correo"></label></p>
+
+     <p><label style="color:#FFDFB6";>INGRESE SU NUMERO DE TELEFONO: <input type="text" name="correo"></label></p>
+
+    <p>
+
+      <label style="color:#FFDFB6";>
+
+        DESCRIBE TU PEDIDO (TIENES QUE SER CLARO):<br>
+
+        <textarea name="mensaje"></textarea>
+
+      </label>
+
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+
+    <legend style="color:#41F6FF";>FORMA DE PAGO</legend>
+
+    <p style="color:#FFDFB6";>
+
+      SELECCIONES UNA OPCION<br>
+
+      <label><input type="checkbox" name="CONTRAENTREGA" style="color:#FFDFB6";> PAGO CONTRA ENTREGA</label>
+
+      <label><input type="checkbox" name="DEBITO" style="color:#FFDFB6";>TARJETA DE DEBITO</label>
+
+      <label><input type="checkbox" name="CREDITO" style="color:#FFDFB6";> TARJETA DE CREDITO</label>
+
+      <label><input type="checkbox" name="TIENDA" style="color:#FFDFB6";>RECOGER EN TIENDA</label>
+
+
+    </p>
+
+  </fieldset>
+
+  <p>
+
+    <input type="reset" value="ENVIAR PEDIDO">
+
+    <input type="reset" value="REALIZAR NUEVO PEDIDO">
+
+  </p>
+
+</form>
+    <br>
+    <br>    
+  </body>
+</html>
